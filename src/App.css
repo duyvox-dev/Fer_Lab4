@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar_container{
+    display: block;
+    width: 100%;
+    background-color: #3e3e3e;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_container nav{
+    margin-left: 20px;
 }
+.navbar_container ul{
+    display: flex;
+    list-style: none;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar_container li{
+    display: block;
 }
+.navbar_container a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    transition: 0.3s all ease;
+}
+.navbar_container a.active{
+    background: yellow;
+    color: black;
+}
+.navbar_container a:hover{
+    background: yellow;
+    color: black;
+}
+.players .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.players .card{
+    text-align: center;
+    background: rgb(227, 227, 227);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.players .card img{
+    display: block;
+    max-width: 100%;
+}
+.players .card a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #3e3e3e;
+}
+.footer{
+    background-color: yellow;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 0;
 }
