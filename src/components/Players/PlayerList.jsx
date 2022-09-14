@@ -1,6 +1,6 @@
 import React from "react";
 import PlayerItem from "./PlayerItem";
-export default function Players({ players }) {
+export default function PlayerList({ players }) {
     return (
         <div className="players">
             <div className="container">

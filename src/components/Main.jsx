@@ -1,10 +1,10 @@
 import React from "react";
 import { players } from "../shared/playerData";
-import Players from "./Players/Players";
+import PlayerList from "./Players/PlayerList";
 export default function Main() {
     return (
         <div>
-            <Players players={players}></Players>
+            <PlayerList players={players}></PlayerList>
         </div>
     );
 }
