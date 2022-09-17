@@ -26,9 +26,9 @@ const players = [
     },
     {
         id: 2,
-        name: "Kane",
-        club: "Tottemham",
-        image: "assets/img/players/kane.jpg",
+        name: "Haaland",
+        club: "Man City",
+        image: "assets/img/players/haaland.jpg",
     },
 ];
 export { players };
