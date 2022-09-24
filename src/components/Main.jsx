@@ -15,8 +15,8 @@ export default class Main extends Component {
     render() {
         return (
             <div classNam="main">
-                <PlayersPresentation players={this.state.players} />
-                {/* <FilmPresentation films={this.state.films} /> */}
+                {/* <PlayersPresentation players={this.state.players} /> */}
+                <FilmPresentation films={this.state.films} />
             </div>
         );
     }

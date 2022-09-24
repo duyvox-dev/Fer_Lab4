@@ -5,6 +5,7 @@ export const films = [
         title: "Star Wars: Episode IV - A New Hope",
         year: "1977",
         nation: "USA",
+        info: "Popcorn pictures hit hyperdrive after George Lucas unveiled his intergalactic Western, an intoxicating gee-whiz space opera with dollops of Joseph Campbell–style mythologizing that obliterated the moral complexities of 1970s Hollywood. This postmodern movie-brat pastiche references a virtual syllabus of genre classics, from Metropolis and Triumph of the Will to Kurosawa’s samurai actioners, Flash Gordon serials and WWII thrillers like The Dam Busters. Luke Skywalker’s quest to rescue a princess instantly elevated B-movie bliss to billion-dollar-franchise sagas.—Stephen Garrett",
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export const films = [
         title: "Minion",
         year: "2022",
         nation: "USA",
+        info: "Minions is a 2015 American computer-animated comedy film produced by Illumination Entertainment and distributed by Universal Pictures. It is the spin-off/prequel[a] and the third installment overall in the Despicable Me franchise. Directed by Pierre Coffin and Kyle Balda (in Balda's directorial debut), produced by Chris Meledandri and Janet Healy, and written by Brian Lynch, the film stars the voices of Coffin as the Minions (including Kevin, Stuart, and Bob), Sandra Bullock, Jon Hamm, Michael Keaton, Allison Janney, Steve Coogan, Jennifer Saunders, and is narrated by Geoffrey Rush. The film focuses on the Minions as they search for their new master.",
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export const films = [
         title: "The god father",
         year: "1975",
         nation: "USA",
+        info: "From the wise guys of Goodfellas to The Sopranos, all crime dynasties that came after The Godfather are descendants of the Corleones: Francis Ford Coppola’s magnum opus is the ultimate patriarch of the Mafia genre. A monumental opening line (“I believe in America”) sets the operatic Mario Puzo adaptation in motion, before Coppola’s epic morphs into a chilling dismantling of the American dream. The corruption-soaked story follows a powerful immigrant family grappling with the paradoxical values of reign and religion; those moral contradictions are crystallized in a legendary baptism sequence, superbly edited in parallel to the murdering of four rivaling dons. With countless iconic details—a horse’s severed head, Marlon Brando’s wheezy voice, Nino Rota’s catchy waltz—The Godfather’s authority lives on.—Tomris Laffly",
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ export const films = [
         title: "Jeane Dielman",
         year: "1975",
         nation: "Spain",
+        info: "Long considered a feminist masterpiece, Chantal Akerman’s quietly ruinous portrait of a widow’s daily routine—her chores slowly yielding to a sense of pent-up frustration—should take its rightful place on any all-time list. This is not merely a niche film, but a window onto a universal condition, depicted in a concentrated structuralist style. More hypnotic than you may realize, Akerman’s uninterrupted takes turn the simple acts of dredging veal or cleaning the bathtub into subtle critiques of moviemaking itself. (Pointedly, we never see the sex work Jeanne schedules in her bedroom to make ends meet.) Lulling us into her routine, Akerman and actor Delphine Seyrig create an extraordinary sense of sympathy rarely matched by other movies. Jeanne Dielman represents a total commitment to a woman’s life, hour by hour, minute by minute. And it even has a twist ending.—Joshua Rothkopf",
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ export const films = [
         title: "Raiders of the Lost ark",
         year: "1981",
         nation: "USA",
+        info: "Starting with a dissolve from the Paramount logo and ending in a warehouse inspired by Citizen Kane, Raiders of the Lost Ark celebrates what movies can do more joyously than any other film. Intricately designed as a tribute to the craft, Steven Spielberg’s funnest blockbuster has it all: rolling boulders, a barroom brawl, a sparky heroine (Karen Allen) who can hold her liquor and lose her temper, a treacherous monkey, a champagne-drinking villain (Paul Freeman), snakes (“Why did it have to be snakes?”), cinema’s greatest truck chase and a barnstorming supernatural finale where heads explode. And it’s all topped off by Harrison Ford’s pitch-perfect Indiana Jones, a model of reluctant but resourceful heroism (look at his face when he shoots that swordsman). In short, it’s cinematic perfection.—Ian Freer",
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ export const films = [
         title: "There Will Be Blood",
         year: "1989",
         nation: "England",
+        info: "On the road to becoming the most significant filmmaker of the last 20 years, Paul Thomas Anderson transformed from a Scorsesian chronicler of debauched L.A. life into a hard-nosed investigator of the American confidence man. The pivotal point was There Will Be Blood, an epic about a certain kind of hustler—the oil baron and prospector. Daniel Plainview is, in the final analysis, an ultra-scary Daniel Day-Lewis who will drink your milkshake. Scored by Radiohead’s Jonny Greenwood (himself emerging as a major composer), Anderson’s mournful epic is the true heir to Chinatown’s bone-deep cynicism. As Phantom Thread makes clear, Anderson hasn’t lost his sense of humor, not by a long shot. But there once was a moment when he needed to get serious, and this is it.—Joshua Rothkopf",
     },
     {
         id: 7,
@@ -47,6 +53,7 @@ export const films = [
         title: "La Donce Vita",
         year: "1960",
         nation: "France",
+        info: "Made in the middle of Italy’s boom years, Federico Fellini’s runaway box-office hit came to define heated glamour and celebrity culture for the entire planet. It also made Marcello Mastroianni a star; here, he plays a gossip journalist caught up in the frenzied, freewheeling world of Roman nightlife. Ironically, the movie’s portrayal of this milieu as vapid and soul-corrodingly hedonistic appears to have passed many viewers by. Perhaps that’s because Fellini films everything with so much cinematic verve and wit that it’s often hard not to get caught up in the delirious happenings onscreen. So much of how we view fame still dates back to this film; it even gave us the word paparazzi.—Bilge Ebir        ",
     },
     {
         id: 8,
@@ -54,6 +61,7 @@ export const films = [
         title: "Seven Samurai",
         year: "1954",
         nation: "Japan",
+        info: "It’s the easiest 207 minutes of cinema you’ll ever sit through. On the simplest of frameworks—a poor farming community pools its resources to hire samurai to protect them from the brutal bandits who steal its harvest—Akira Kurosawa mounts a finely drawn epic, by turns absorbing, funny and exciting. Of course the action sequences stir the blood—the final showdown in the rain is unforgettable—but this is really a study in human strengths and foibles. Toshiro Mifune is superb as the half-crazed self-styled samurai, but it’s Takashi Shimura’s Yoda-like leader who gives the film its emotional center. Since replayed in the Wild West (The Magnificent Seven), in space (Battle Beyond the Stars) and even with animated insects (A Bug’s Life), the original still reigns supreme.—Ian Freer",
     },
     {
         id: 9,
@@ -61,5 +69,6 @@ export const films = [
         title: "In the mood of love",
         year: "2000",
         nation: "Italia",
+        info: "Can a film really be an instant classic? Anyone who watched In The Mood for Love when it was released in 2000 may have said yes. The second this love story opens, you sense you are in the hands of a master. Wong Kar-wai guides us through the narrow streets and stairs of ’60s Hong Kong and into the lives of two neighbors (Maggie Cheung and Tony Leung) who discover their spouses are having an affair. As they imagine—and partly reenact—how their partners might be behaving, they fall for each other while remaining determined to respect their wedding vows. Loaded with longing, the film benefits from no less than three cinematographers, who together create an intense sense of intimacy, while the faultless performances shiver with sexual tension. This is cinema.—Anna Smith",
     },
 ];
