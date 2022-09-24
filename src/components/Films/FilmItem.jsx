@@ -11,7 +11,7 @@ export default function FilmItem({
             </div>
             <div className="film-content">
                 <h3 className="film-title">{filmData?.title}</h3>
-                <div class="film-info">
+                <div className="film-info">
                     <span className="film-sub-info">
                         <span className="film-sub-title">Year</span>
                         <span>{filmData?.year}</span>

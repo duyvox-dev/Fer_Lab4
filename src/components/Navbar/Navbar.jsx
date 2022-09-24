@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar({ toggleTheme }) {
+export default function Navbar({ toggleTheme = () => {}, theme = {} }) {
     return (
         <div className="navbar_container">
             <nav>
@@ -27,7 +27,7 @@ export default function Navbar({ toggleTheme }) {
                     </li>
                 </ul>
             </nav>
-            <div class="theme-switch">
+            <div className="theme-switch">
                 <span className="theme-value">Light</span>
                 <label className="switch">
                     <input
@@ -35,8 +35,9 @@ export default function Navbar({ toggleTheme }) {
                         onClick={() => {
                             toggleTheme();
                         }}
+                        defaultChecked={theme === "dark" ? true : false}
                     />
-                    <span class="slider round"></span>
+                    <span className="slider round"></span>
                 </label>
                 <span className="theme-value">Dark</span>
             </div>

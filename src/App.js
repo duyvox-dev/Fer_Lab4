@@ -4,20 +4,23 @@ import { createContext, useContext, useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Main from "./components/Main.jsx";
+import { localTheme } from "./utils/localStorageUtil";
+const prevTheme = localTheme.getTheme();
 const ThemeContext = createContext(null);
 
 function App() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(prevTheme === "dark" ? "dark" : "light");
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     };
-    // useEffect(() => {
-    //     console.log(theme);
-    // }, [theme]);
+    useEffect(() => {
+        console.log(theme);
+        localTheme.setTheme(theme);
+    }, [theme]);
     return (
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
-                <Navbar toggleTheme={toggleTheme} />
+                <Navbar toggleTheme={toggleTheme} theme={theme} />
 
                 <Main></Main>
                 <Footer></Footer>

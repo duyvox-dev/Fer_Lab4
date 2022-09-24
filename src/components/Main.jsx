@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
     render() {
         return (
-            <div classNam="main">
+            <div className="main">
                 {/* <PlayersPresentation players={this.state.players} /> */}
                 <FilmPresentation films={this.state.films} />
             </div>
