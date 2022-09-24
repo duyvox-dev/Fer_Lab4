@@ -11,9 +11,9 @@ function App() {
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     };
-    useEffect(() => {
-        console.log(theme);
-    }, [theme]);
+    // useEffect(() => {
+    //     console.log(theme);
+    // }, [theme]);
     return (
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
