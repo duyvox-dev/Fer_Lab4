@@ -21,7 +21,6 @@ function App() {
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
                 <Navbar toggleTheme={toggleTheme} theme={theme} />
-
                 <Main></Main>
                 <Footer></Footer>
             </div>

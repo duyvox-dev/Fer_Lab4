@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar({ toggleTheme = () => {}, theme = {} }) {
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const toggleMobileMenu = () => {
+        setMobileMenu(!mobileMenu);
+    };
     return (
         <div className="navbar_container">
             <nav>
-                <ul>
+                <span
+                    className="navbar-menu-btn"
+                    onClick={() => {
+                        toggleMobileMenu();
+                    }}
+                >
+                    <FontAwesomeIcon className="" icon={faBars} />
+                </span>
+                <ul className={`${mobileMenu ? "menu-mobile-visible" : ""}`}>
                     <li>
                         <a href="#" className="active">
                             Home
