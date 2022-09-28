@@ -33,7 +33,7 @@ export default function Detail({ players = [] }) {
                 </h2>
                 <p className="detail-cost">
                     <span>Marketplace: €</span>
-                    {curPlayer?.cost}
+                    {Number.parseFloat(curPlayer?.cost).toLocaleString()}
                 </p>
                 <p className="detail-info">{curPlayer?.info}</p>
             </div>

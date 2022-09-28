@@ -20,6 +20,7 @@ function App() {
         console.log(theme);
         localTheme.setTheme(theme);
     }, [theme]);
+    document.title = "Top player";
     return (
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
