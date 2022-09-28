@@ -13,16 +13,18 @@ export default function Detail({ players = [] }) {
     }, [id]);
     useEffect(() => {
         console.log(curPlayer);
+        if (curPlayer?.name) {
+            document.title = curPlayer?.name;
+        } else {
+            document.title = "Player not found";
+        }
     }, [curPlayer]);
+
     return (
         <div className="detail">
             <div className="detail-container">
                 <div className="detail-image">
                     <img src={curPlayer?.img} alt="" />
-                    {/* <img
-                        src="https://static.bongda24h.vn/medias/standard/2022/09/07/2-0709094231.jpg"
-                        alt=""
-                    /> */}
                 </div>
                 <h2 className="detail-personal">
                     <span className="detail-name">{curPlayer?.name}</span>
