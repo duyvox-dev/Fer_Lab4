@@ -117,19 +117,29 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+.dark .players{
+    background: rgb(24 24 27); 
+}
 .players .container{
-    margin: 1rem 0;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 2rem;
 }
 .players .card{
     text-align: center;
     background: rgb(227, 227, 227);
-
+}
+.dark .players .card {
+    background: rgb(39 39 42);
+    color: white;
+}
+.dark .player-name{
+    color:rgb(250 204 21);
 }
 .players .card img{
     display: block;
+    width: 100%;
     max-width: 100%;
     height: 300px;
     max-height: 300px;
@@ -398,6 +408,10 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1023.98px) {
+    .players .container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
     .film .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -431,6 +445,10 @@ input:checked + .slider:before {
     }
     .navbar_container ul.menu-mobile-visible{
         display: block;
+    }
+    .players .container{
+        grid-template-columns: repeat(1, 1fr);
+
     }
     .film .container {
         display: grid;
