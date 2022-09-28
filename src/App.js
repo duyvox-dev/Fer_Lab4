@@ -1,9 +1,12 @@
 import style from "./App.css";
 import { createContext, useContext, useEffect, useState } from "react";
-
+import { players } from "./shared/ListOfPlayers";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar.jsx";
-import Main from "./components/Main.jsx";
+import { Routes, Route } from "react-router-dom";
+import PlayersPresentation from "./components/Players/PlayersPresentation";
+import Contact from "./components/Contact/Contact";
+import Detail from "./components/Detail/Detail";
 import { localTheme } from "./utils/localStorageUtil";
 const prevTheme = localTheme.getTheme();
 const ThemeContext = createContext(null);
@@ -21,7 +24,18 @@ function App() {
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
                 <Navbar toggleTheme={toggleTheme} theme={theme} />
-                <Main></Main>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<PlayersPresentation players={players} />}
+                    ></Route>
+                    <Route
+                        path="/detail/:id"
+                        element={<Detail players={players} />}
+                    ></Route>
+                    <Route path="/contact" element={<Contact />}></Route>
+                </Routes>
+
                 <Footer></Footer>
             </div>
         </ThemeContext.Provider>
