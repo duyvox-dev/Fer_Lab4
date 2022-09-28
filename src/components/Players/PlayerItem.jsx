@@ -1,19 +1,12 @@
 import React from "react";
-
-export default function PlayerItem({ playerData, handleSetPlayer = () => {} }) {
+import { Link } from "react-router-dom";
+export default function PlayerItem({ playerData }) {
     return (
         <div className="card">
             <img src={playerData.img} alt="" />
             <h3>{playerData.name}</h3>
             <p>{playerData.club}</p>
-            <a
-                href="#"
-                onClick={() => {
-                    handleSetPlayer(playerData);
-                }}
-            >
-                Detail
-            </a>
+            <Link to={`/detail/${playerData?.id}`}>Detail</Link>
         </div>
     );
 }

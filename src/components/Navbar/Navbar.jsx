@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar({ toggleTheme = () => {}, theme = {} }) {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -20,24 +21,44 @@ export default function Navbar({ toggleTheme = () => {}, theme = {} }) {
                 </span>
                 <ul className={`${mobileMenu ? "menu-mobile-visible" : ""}`}>
                     <li>
-                        <a href="#" className="active">
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
                             Home
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="">
+                        <NavLink
+                            to="/news"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
                             News
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="">
+                        <NavLink
+                            to="/about"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
                             About
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="">
+                        <NavLink
+                            to="/contact"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
                             Contact
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
