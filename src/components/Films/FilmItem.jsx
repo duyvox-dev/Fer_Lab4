@@ -1,5 +1,7 @@
 import React from "react";
 import { truncate } from "../../utils/textUtil";
+import { Link } from "react-router-dom";
+
 export default function FilmItem({
     filmData = {},
     handleSetSelectedFilm = () => {},
@@ -26,14 +28,12 @@ export default function FilmItem({
                 <p className="film-overlay-info">
                     {truncate(filmData?.info, 150)}
                 </p>
-                <span
-                    className="film-overlay-button"
-                    onClick={() => {
-                        handleSetSelectedFilm(filmData);
-                    }}
-                >
-                    See more information
-                </span>
+                <Link to={`/detail/${filmData?.id}`}>
+                    {" "}
+                    <span className="film-overlay-button">
+                        See more information
+                    </span>
+                </Link>
             </div>
         </div>
     );

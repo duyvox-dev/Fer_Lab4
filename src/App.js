@@ -1,10 +1,10 @@
 import style from "./App.css";
 import { createContext, useContext, useEffect, useState } from "react";
-import { players } from "./shared/ListOfPlayers";
+import { films } from "./shared/ListOfFilms";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import { Routes, Route } from "react-router-dom";
-import PlayersPresentation from "./components/Players/PlayersPresentation";
+import FilmPresentation from "./components/Films/FilmPresentation";
 import Contact from "./components/Contact/Contact";
 import Detail from "./components/Detail/Detail";
 import { localTheme } from "./utils/localStorageUtil";
@@ -17,10 +17,12 @@ function App() {
         setTheme(theme === "light" ? "dark" : "light");
     };
     useEffect(() => {
-        console.log(theme);
+        // console.log(theme);
         localTheme.setTheme(theme);
     }, [theme]);
-    document.title = "Top player";
+    useEffect(() => {
+        document.title = "Top player";
+    }, []);
     return (
         <ThemeContext.Provider value={theme}>
             <div className={`${theme} App`}>
@@ -28,11 +30,11 @@ function App() {
                 <Routes>
                     <Route
                         path="/"
-                        element={<PlayersPresentation players={players} />}
+                        element={<FilmPresentation films={films} />}
                     ></Route>
                     <Route
                         path="/detail/:id"
-                        element={<Detail players={players} />}
+                        element={<Detail films={films} />}
                     ></Route>
                     <Route path="/contact" element={<Contact />}></Route>
                 </Routes>

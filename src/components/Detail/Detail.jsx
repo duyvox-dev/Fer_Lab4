@@ -3,39 +3,37 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-export default function Detail({ players = [] }) {
+export default function Detail({ films = [] }) {
     const { id } = useParams();
-    const [curPlayer, setCurPlayer] = useState({});
+    const [curFilm, setCurFilm] = useState({});
     useEffect(() => {
-        const player = players.find((player) => player?.id == id);
-        if (player) setCurPlayer(player);
-        else setCurPlayer({});
+        const film = films.find((film) => film?.id == id);
+        if (film) setCurFilm(film);
+        else setCurFilm({});
     }, [id]);
     useEffect(() => {
-        console.log(curPlayer);
-        if (curPlayer?.name) {
-            document.title = curPlayer?.name;
+        console.log(curFilm);
+        if (curFilm?.title) {
+            document.title = curFilm?.title;
         } else {
-            document.title = "Player not found";
+            document.title = "Film not found";
         }
-    }, [curPlayer]);
+    }, [curFilm]);
 
     return (
         <div className="detail">
             <div className="detail-container">
                 <div className="detail-image">
-                    <img src={curPlayer?.img} alt="" />
+                    <img src={curFilm?.image} alt="" />
+                    <span className="detail-year">{curFilm?.year}</span>
                 </div>
                 <h2 className="detail-personal">
-                    <span className="detail-name">{curPlayer?.name}</span>
+                    <span className="detail-name">{curFilm?.title}</span>
                     <span className="detail-personal-divider"> - </span>
-                    <span className="detail-club">{curPlayer?.club}</span>
+                    <span className="detail-nation">{curFilm?.nation}</span>
                 </h2>
-                <p className="detail-cost">
-                    <span>Marketplace: €</span>
-                    {Number.parseFloat(curPlayer?.cost).toLocaleString()}
-                </p>
-                <p className="detail-info">{curPlayer?.info}</p>
+
+                <p className="detail-info">{curFilm?.info}</p>
             </div>
         </div>
     );

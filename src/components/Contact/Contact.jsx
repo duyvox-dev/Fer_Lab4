@@ -24,7 +24,7 @@ export default function Contact() {
                     <div className="contact-info">vobaoduy123@gmail.com</div>
                 </a>
                 <a
-                    href="facebook.com/vobaoduy123"
+                    href="https://www.facebook.com/vobaoduy123"
                     target="_blank"
                     className="contact-item"
                 >
