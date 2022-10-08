@@ -2,7 +2,7 @@ export const films = [
     {
         id: 1,
         image: "/assets/img/films/starwar.jpeg",
-        title: "Star Wars: Episode IV - A New Hope",
+        title: "Star Wars: Episode IV",
         year: "1977",
         nation: "USA",
         info: "Popcorn pictures hit hyperdrive after George Lucas unveiled his intergalactic Western, an intoxicating gee-whiz space opera with dollops of Joseph Campbell–style mythologizing that obliterated the moral complexities of 1970s Hollywood. This postmodern movie-brat pastiche references a virtual syllabus of genre classics, from Metropolis and Triumph of the Will to Kurosawa’s samurai actioners, Flash Gordon serials and WWII thrillers like The Dam Busters. Luke Skywalker’s quest to rescue a princess instantly elevated B-movie bliss to billion-dollar-franchise sagas.—Stephen Garrett",
