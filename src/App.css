@@ -1,7 +1,5 @@
 .App {
-    margin: 0 !important;
-    padding: 0 !important;
-    position: relative;
+    min-height: 100vh;
 }
 /* .navbar_container {
     display: flex;
@@ -238,7 +236,8 @@ input:checked + .slider:before {
     overflow: hidden;
 }
 .film-card img {
-    height: 300px;
+    height: 250px;
+    object-fit: cover;
 }
 .film-content {
     padding: 0 20px;
@@ -425,12 +424,8 @@ input:checked + .slider:before {
  
 }
 .contact-container{
-    margin: 0 auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1024px;    
+    
+    padding: 1rem 0;
 }
 .contact-item{
     text-decoration: none;
@@ -482,9 +477,9 @@ input:checked + .slider:before {
     .detail-year {
         font-size: 20px;
     }
-    .contact-container{
+    /* .contact-container{
         grid-template-columns: repeat(1, 1fr);
-    }
+    } */
     .contact-heading{
         font-size: 36px;
     }
@@ -534,3 +529,70 @@ input:checked + .slider:before {
         font-size: 30px;
     }
 }
+.film-detail-container{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.film-detail-heading{
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.film-detail-col{
+    height: 500px;
+    overflow: scroll;
+}
+.film-detail-image{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 88%;
+}
+.film-detail-head{
+    font-weight: 600;
+}
+.film-detail-button{
+    display: block;
+    width: 100%;
+    height: 12%;
+}
+
+  /* label color */
+  .input-field label {
+    color: #000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #f06292;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #f06292;
+    box-shadow: 0 1px 0 0 #f06292;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #f06292;
+  }
+
+  .modal-show {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vmax;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  

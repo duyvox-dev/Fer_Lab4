@@ -1,7 +1,7 @@
 import style from "./App.css";
 import { createContext, useContext, useEffect, useState } from "react";
 import { films } from "./shared/ListOfFilms";
-import Footer from "./components/Footer/Footer";
+import SiteFooter from "./components/SiteFooter/SiteFooter";
 import NavigationBar from "./components/NavigationBar/NavigationBar.jsx";
 import { Routes, Route } from "react-router-dom";
 import FilmPresentation from "./components/Films/FilmPresentation";
@@ -43,7 +43,7 @@ function App() {
                     <Route path="/about" element={<About />}></Route>
                 </Routes>
 
-                <Footer></Footer>
+                <SiteFooter></SiteFooter>
             </div>
         </ThemeContext.Provider>
     );

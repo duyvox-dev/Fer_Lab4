@@ -20,7 +20,12 @@ export default function FilmItem({
                 title={truncate(filmData?.title, 15)}
             >
                 <p>
-                    <Link to={`/detail/${filmData?.id}`}>Detail</Link>
+                    <Link
+                        to={`/detail/${filmData?.id}`}
+                        className="pink-text text-darken-2"
+                    >
+                        Detail
+                    </Link>
                 </p>
             </Card>
         </>
